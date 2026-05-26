@@ -41,14 +41,14 @@ let config = {
 let game = new Phaser.Game(config);
 
 function preload() {
-  this.load.image("background", "Sprites_FlappyBird/Columbia.png");
-  this.load.image("road", "Sprites_FlappyBird/Bridge.png");
-  this.load.image("column", "Sprites_FlappyBird/Pillar.png");
+  this.load.image("background", "Demo_Flappy_Bird/Sprites_FlappyBird/Columbia.png");
+  this.load.image("road", "Demo_Flappy_Bird/Sprites_FlappyBird/Bridge.png");
+  this.load.image("column", "Demo_Flappy_Bird/Sprites_FlappyBird/Pillar.png");
   
   // NOTA: Asegúrate de que el archivo en tu carpeta sea .mp3 (o la extensión de audio real)
-  this.load.audio("theme", "Audio_FlappyBird/AirBach.mp3");
+  this.load.audio("theme", "Demo_Flappy_Bird/Audio_FlappyBird/AirBach.mp3");
 
-  this.load.spritesheet("bird", "Sprites_FlappyBird/SongBird.png", {
+  this.load.spritesheet("bird", "Demo_Flappy_Bird/Sprites_FlappyBird/SongBird.png", {
     frameWidth: 32,
     frameHeight: 32,
   });
