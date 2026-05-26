@@ -45,7 +45,6 @@ function preload() {
   this.load.image("road", "Sprites_FlappyBird/Bridge.png");
   this.load.image("column", "Sprites_FlappyBird/Pillar.png");
   
-  // NOTA: Asegúrate de que el archivo en tu carpeta sea .mp3 (o la extensión de audio real)
   this.load.audio("theme", "Audio_FlappyBird/AirBach.mp3");
 
   this.load.spritesheet("bird", "Sprites_FlappyBird/SongBird.png", {
@@ -63,7 +62,6 @@ function create() {
   background.displayWidth = this.sys.game.config.width;
   background.displayHeight = this.sys.game.config.height;
 
-  // CORRECCIÓN AQUÍ: Agregamos la música UNA SOLA VEZ antes del bucle de los pilares
   bgMusic = this.sound.add("theme", {
     volume: 0.5, 
     loop: true   
